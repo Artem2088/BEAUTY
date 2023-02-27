@@ -1,0 +1,45 @@
+.product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px 0 100px;
+    background-color: $COLOR_GRAY;
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        max-width: 1110px;
+        width: 100%;
+
+        @media screen and (max-width: 1000px) {
+            align-items: center;
+        }
+    }
+
+    &__title {
+        font-size: 24px;
+        line-height: 28px;
+        color: $COLOR_BLACK;
+        padding-bottom: 38px;
+
+        @media screen and (max-width: 400px) {
+            padding: 0 0 38px 60px;
+        }
+    }
+
+    &__cards {
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+
+        @media screen and (max-width: 1000px) {
+            display: grid;
+            grid-template-columns: 255px auto;
+        }
+
+        @media screen and (max-width: 570px) {
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+    }
+}

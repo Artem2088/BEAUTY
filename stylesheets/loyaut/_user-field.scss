@@ -1,0 +1,88 @@
+.user-field {
+    display: flex;
+    flex-direction: column;
+    background-color: $COLOR_GRAY;
+    align-items: center;
+    padding-bottom: 132px;
+
+    &__wrapper {
+        display: flex;
+        flex-direction: row;
+        max-width: 1110px;
+        width: 100%;
+        justify-content: center;
+        gap: 30px;
+
+        @media screen and (max-width: 1000px) {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    &__reg {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 540px;
+        height: 212px;
+        background-color: $COLOR_GREEN;
+
+        @media screen and (max-width: 600px) {
+            max-width: 100%;
+        }
+    }
+
+    &__block {
+        display: flex;
+        flex-direction: column;
+        padding: 35px 65px 35px 40px;
+
+        &_second {
+            width: 170px;
+        }
+
+        @media screen and (max-width: 600px) {
+            padding: 10px;
+        }
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 21px;
+        color: $COLOR_WHITE;
+        padding-bottom: 25px;
+    }
+
+    &__description {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        color: $COLOR_WHITE;
+        padding-bottom: 25px;
+    }
+
+    &__mail {
+        padding-right: 45px;
+
+        @media screen and (max-width: 600px) {
+            display: none;
+        }
+    }
+
+    &__shop-map {
+        display: flex;
+    }
+
+    &__btn {
+        border: 2px solid $COLOR_WHITE;
+    }
+
+    &__span {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        text-align: center;
+        color: $COLOR_WHITE;
+    }
+}

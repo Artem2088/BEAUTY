@@ -1,0 +1,48 @@
+.product-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 255px;
+    height: 363px;
+    background-color: $COLOR_WHITE;
+
+    &__img {
+        width: 125px;
+        height: 166px;
+    }
+
+    &__description {
+        font-size: 14px;
+        line-height: 20px;
+        text-align: center;
+        color: $COLOR_DARK;
+        padding: 20px 30px;
+    }
+
+    &__price {
+        font-weight: 500;
+        font-size: 21px;
+        line-height: 25px;
+        letter-spacing: 0.05em;
+        color: $COLOR_BLACK;
+        padding-bottom: 20px;
+    }
+
+    &__btn {
+        width: 130px;
+        height: 35px;
+        background-color: $COLOR_GREEN;
+        padding: 0;
+    }
+
+    &__span {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        text-align: center;
+        letter-spacing: 0.05em;
+        color: $COLOR_WHITE;
+        text-align: center;
+    }
+}
